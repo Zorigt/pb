@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CNIT 132 - Zorigt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+		<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	<style type="text/css">
+		.custom {
+			width: 220px !important;
+		}
+		.top-buffer {
+			margin-top: 5px;
+		}
+		.update-time{
+			color: white;
+		}
+		body {
+     background-color: #000000;
+     text-align:center; /* Hack for IE/Win */ 
+     margin-top: 20px;
+     }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+     
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+}
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+       
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+
+.content {
+
+	margin: 0px auto; padding: 15px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	
+	background-color:#eee;
+         }    
+
+
+
+.pol { 
+	 text-align: center;
+         font-size: 24px;
+	   }
+
+
+h1 {
+
+font:  24pt arial;
+color: #8f0052;
+text-align: center;
+}
+
+
+h2 {
+
+font:  18pt arial;
+color: #ff0000;
+text-align: left;
+}
+
+
+h3 {
+
+font-family: TimesRoman;
+font-size: 16pt;
+color: #0000ff;
+text-align: right;
+}
+
+h4 {
+
+font-family: OldEnglish;
+font-size: 14pt;
+color: #ff00ff;
+text-align: center;
+}
+
+
+p.left  {
+
+font-family: 'comic sans ms';
+font-size: 10pt; 
+color: #000000;
+text-align: left;
+font-weight: bold;
+text-indent: .6in;
+}
+
+
+p.right  {
+
+font-family: verdana, helvetica, san-serif;
+font-size: 10pt; 
+color: #000000;
+text-align: right;
+background-color: #fffff0;
+border-style: dotted;
+border-color: #a020f0;
+padding: 1em;
+}
+
+p.ital  {
+
+font-family: 'Century Schoolbook';
+font-size: 12pt;
+color: #9c3ece;
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+
+a {
+
+color: #0000ff; 
+text-decoration: none;
+}
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+	</style>
+	</head>
+	<body>
+		<!-- Navbar ================================================================================ -->
+		<div id="header"></div>
+		<script>
+			$("#header").load("../helper/header.html");
+		</script>
+		<!-- Content ================================================================================ -->
+		
+		<div class="container marketing">
+			<hr class="featurette-divider">
+			
+			<div class="row">
+				<div class="col-md-4 text-center">
+				<button type="button" class="btn btn-lg btn-danger custom" onclick="location.href='ess.html'">Embedded Style Sheet</button>
+				</div>
+				 <div class="col-md-4 text-center top-buffer">
+                        	<button type="button" class="btn btn-lg btn-warning custom" onclick="location.href='lss.html'">Linked Style Sheet</button> 
+                                </div>
+				 <div class="col-md-4 text-center top-buffer">
+                        	<button type="button" class="btn btn-lg btn-success custom" onclick="location.href='iss.html'">Inline Style Sheet</button> 
+                                </div>
+
+			</div>
+
+			<hr class="featurette-divider">
+<section class="content">			
+<h1>Embedded Style Sheet Example</h1>
+
+
+<p class="pol">The politics of the 21st century</p>
+
+<h2>Lefties and Righties</h2>
+
+
+<p class="left">
+
+Socialists are to the left of liberals.
+ Most liberals are Democrats, although some have
+wandered over to the Green party. Republicans are right-wingers. 
+Most Republicans are 
+conservative. What does conservative mean? Do they want to
+conserve the environment? Do they want to conserve the 2nd amendment?
+Do they want to conserve a woman's right to choose an abortion?
+ Do they want to conserve a separation between church and state?
+
+<a href="http://www.microsoft.com">Click here</a>
+for Bill Gates.</p>
+
+
+<h3>Women and Men  (Satire)</h3>
+
+<p class="right">
+
+Women have been called dames, broads, chicks, 
+and foxes. They are supposed to be good at nurturing, child-rearing, 
+and catering to men. They always seem to lose their keys and they want
+ their men to be macho, adventurous, brave, and handsome. They love
+hunks. Men are good in math and engineering and like the sport of
+one-upmanship. Men 
+love sports and mowing lawns. They are good at fixing
+ clogged drains, but they hate cleaning
+ the bathroom.
+<a href="http://www.sfgiants.com">Click here</a> for your 
+San Francisco Giants!
+</p>
+
+<h4>Personal Responsibility</h4>
+
+<p class="ital">
+The name of the game is personal responsibility. That means that you
+ just need to take care of yourself and not
+ care about things like community involvement, poor people, or 
+ the obscene gap between the rich and poor in this country.
+</p>
+
+		</section>
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="col-md-6">
+				<p class="pull-right update-time">
+					<script type="text/javascript">
+						var dateModified=document.lastModified;
+						mydate=dateModified.slice(0,16);
+						document.write("Last Updated: "+mydate);
+					</script>
+				</p>
+			</div>
+			<div id="footer"></div>			
+		</footer>
+
+		<script>
+			$("#footer").load("../helper/footer.html");
+		</script>
+
+		
+		<script src="../assets/js/bootstrap.min.js"></script>
+	</body>
+</html>

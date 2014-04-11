@@ -1,0 +1,8 @@
+body{
+	background-color: #CCCCCC;
+}
+
+.resize {
+    width: 200px;
+    height: auto;
+}

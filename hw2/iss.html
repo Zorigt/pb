@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CNIT 132 - Zorigt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+		<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	<style type="text/css">
+		.custom {
+			width: 220px !important;
+		}
+		.top-buffer {
+			margin-top: 5px;
+		}
+		.col-md-4 a  {
+			color: white;
+		}
+	</style>
+	</head>
+	<body>
+		<!-- Navbar ================================================================================ -->
+		<div id="header"></div>
+		<script>
+			$("#header").load("../helper/header.html");
+		</script>
+		<!-- Content ================================================================================ -->
+		<div class="container marketing">
+			<hr class="featurette-divider">
+			
+			<div class="row">
+				<div class="col-md-4 text-center">
+				<button type="button" class="btn btn-lg btn-danger custom" onclick="location.href='ess.html'">Embedded Style Sheet</button>
+				</div>
+				 <div class="col-md-4 text-center top-buffer">
+                        	<button type="button" class="btn btn-lg btn-warning custom" onclick="location.href='lss.html'">Linked Style Sheet</button> 
+                                </div>
+				 <div class="col-md-4 text-center top-buffer">
+                        	<button type="button" class="btn btn-lg btn-success custom" onclick="location.href='iss.html'">Inline Style Sheet</button> 
+                                </div>
+
+			</div>
+
+			<hr class="featurette-divider">
+			<h2 style="color: #000; font: 20pt garamond; text-align: center;
+text-shadow: 1px 1px 1px #fff;  margin-left: 215px; margin-right: 215px;">
+Inline Style Sheet Example</h2>
+
+
+
+<div style="background-color: #CCCCCC; text-align: 
+justify; font: 12pt 'comic sans ms'; margin-left: 120px; margin-right: 100px;
+border-style: dashed; padding: 1em; border-color: blue; width: 600px;">
+
+Surrounded by a ballet of rings and a swarm of moons,
+the distant planet always has hidden its secrets from prying telescopes and planetary probes. 
+<img src="../assets/img/saturnth.gif"  style="float: left; margin-right: 10px;" alt="saturn" />Now, a NASA spacecraft called 
+
+<em style="background-color: #8000ff; color: white;">Cassini</em>
+
+ is ready to explore
+ 
+<span style="background-color: #8000ff; color: white;">Saturn's</span>
+ secrets. Launched Oct. 15, 1997 from Cape Canaveral, Cassini will take 11 years to accomplish its mission with help from hundreds of the world's top scientists. But the mission's power
+ source - 
+
+<span style="background-color: #8000ff; color: white;">
+radioactive plutonium</span> - has created an international controversy. 
+		
+</div>
+
+<br><br>
+
+
+<div style="margin-left: 121px; margin-right: 215px; background-color: yellow; text-align: justify; font: 12pt century gothic; line-height: 16pt; font-weight: bold; border-style: dotted; padding: 1em; border-color: red; width: 600px;">		
+
+How should the highly successful voyage of NASA's <span style="background-color: #8f0052; color: yellow;">Galileo</span> spacecraft to Jupiter end? 
+
+<img src="../assets/img/jupiter.gif" alt="jupiter" style="float: right; margin-left: 10px;">
+
+
+ More importantly, where should controllers guide the probe
+  to avoid polluting the jovian system? 
+
+To avoid the contamination of potential life-growing areas such as 
+the jovian moon 
+
+<em style="background-color: #8f0052; color: yellow;">
+Europa</em>, 
+
+NASA is trying to investigate ways to
+ bring the mission to a safe end. The only real option -- send
+ the Galileo probe crashing into 
+
+<span style="background-color: #8f0052; color: yellow;">
+Jupiter</span> 
+
+or one of its other moons.
+
+</div> 
+
+<br>
+
+<div id="boxShadow">
+
+<h3>To go where no one has gone before</h3>
+
+</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="col-md-6">
+				<p class="pull-right">
+					<script type="text/javascript">
+						var dateModified=document.lastModified;
+						mydate=dateModified.slice(0,16);
+						document.write("Last Updated: "+mydate);
+					</script>
+				</p>
+			</div>
+			<div id="footer"></div>			
+		</footer>
+
+		<script>
+			$("#footer").load("../helper/footer.html");
+		</script>
+
+		
+		<script src="../assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
